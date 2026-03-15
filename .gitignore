@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.pyc
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Node modules (UI source)
+ui/node_modules/
+ui/.cache/
+ui/dist/
+
+# Logs
+*.log
+debug.log
+app.log
+nohup.out
+
+# Uploads (user data)
+uploads/*
+!uploads/.gitkeep
+
+# Local storage
+__azurite_db_*.json
+__blobstorage__/
+__queuestorage__/
+vectorstore/
+
+# Backup files
+*_backup*.py
+*.bak
+
+# Deployment package
+deployment_package/
+*.zip
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Test files
+tests/
+*.test.py
+test_*.py
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
