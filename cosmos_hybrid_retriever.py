@@ -99,8 +99,9 @@ class CosmosHybridRetriever:
             return []
 
         # Build CONTAINS clauses for WHERE
+        # ✅ FIX: Cosmos DB CONTAINS only takes 2 parameters (no case-insensitive flag)
         contains_clauses = [
-            f"CONTAINS(c.text, '{kw}', true)"
+            f"CONTAINS(c.text, '{kw}')"
             for kw in safe_keywords
         ]
 
